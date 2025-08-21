@@ -6,13 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AB0CCF462E56BA05003048C6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AB0CCF452E56BA05003048C6 /* FirebaseAuth */; };
+		AB0CCF482E56BA05003048C6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AB0CCF472E56BA05003048C6 /* FirebaseFirestore */; };
+		AB0CCF4A2E56BA05003048C6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AB0CCF492E56BA05003048C6 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AB0CCF342E56B562003048C6 /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AB0CCF432E56B653003048C6 /* Exceptions for "Snacktacular" folder in "Snacktacular" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AB0CCF332E56B562003048C6 /* Snacktacular */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AB0CCF362E56B562003048C6 /* Snacktacular */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AB0CCF432E56B653003048C6 /* Exceptions for "Snacktacular" folder in "Snacktacular" target */,
+			);
 			path = Snacktacular;
 			sourceTree = "<group>";
 		};
@@ -23,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0CCF462E56BA05003048C6 /* FirebaseAuth in Frameworks */,
+				AB0CCF482E56BA05003048C6 /* FirebaseFirestore in Frameworks */,
+				AB0CCF4A2E56BA05003048C6 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +87,9 @@
 			);
 			name = Snacktacular;
 			packageProductDependencies = (
+				AB0CCF452E56BA05003048C6 /* FirebaseAuth */,
+				AB0CCF472E56BA05003048C6 /* FirebaseFirestore */,
+				AB0CCF492E56BA05003048C6 /* FirebaseStorage */,
 			);
 			productName = Snacktacular;
 			productReference = AB0CCF342E56B562003048C6 /* Snacktacular.app */;
@@ -94,6 +119,9 @@
 			);
 			mainGroup = AB0CCF2B2E56B562003048C6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AB0CCF442E56BA05003048C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AB0CCF352E56B562003048C6 /* Products */;
 			projectDirPath = "";
@@ -256,9 +284,9 @@
 				DEVELOPMENT_TEAM = TDSSHU824X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Snacktacular/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -284,9 +312,9 @@
 				DEVELOPMENT_TEAM = TDSSHU824X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Snacktacular/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,6 +352,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB0CCF442E56BA05003048C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB0CCF452E56BA05003048C6 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB0CCF442E56BA05003048C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AB0CCF472E56BA05003048C6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB0CCF442E56BA05003048C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AB0CCF492E56BA05003048C6 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB0CCF442E56BA05003048C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB0CCF2C2E56B562003048C6 /* Project object */;
 }
